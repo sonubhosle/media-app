@@ -1,0 +1,74 @@
+/* Home Section Css */
+.home-section {
+    width: 50%;
+    margin: 90px auto 0px auto;
+    height: auto;
+    position: relative;
+    border-radius: 4px;
+    row-gap: 20px;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-container);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.main-section .box-2 {
+    background-color: var(--bg-container);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.066);
+    border-radius: 6px;
+}
+
+.box-2 p {
+    color: var(--bg-primary);
+}
+
+.box-2 i {
+    font-size: 26px;
+    color: var(--bg-primary);
+
+}
+
+
+
+/* Media Query Form Home Page */
+
+@media(max-width:1024px) {
+    .home-section {
+        width: 58%;
+        margin: 0;
+        left: 110px;
+    }
+
+}
+
+@media(max-width:991px) {
+    .home-section {
+        margin-top: 110px;
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .home-section {
+        width: 100%;
+        height: auto;
+        left: 0;
+        padding: 20px;
+    }
+
+}
+
+@media(max-width:350px) {
+    .home-section {
+        padding: 10px;
+    }
+}

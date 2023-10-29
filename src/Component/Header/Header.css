@@ -1,0 +1,171 @@
+/* Header Section Css */
+
+.header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 888;
+    column-gap: 18px;
+    background-color: var(--bg-body);
+    justify-content: center;
+    z-index: 9998;
+}
+
+.logo {
+    width: 250px;
+    height: 60%;
+    background-color: var(--bg-container);
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.045) 0px 0px 8px 0px;
+
+}
+
+.logo a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.search {
+    width: 50%;
+    height: 60%;
+    background-color: var(--bg-container);
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.045) 0px 0px 8px 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 1%;
+
+
+}
+
+.search .icon {
+    width: 8%;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    height: 100%;
+}
+.search p{
+    font-size:14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search .bx-search {
+    font-size: 18px;
+}
+
+.search .search-box {
+    width: 88%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin: 0px 5px;
+}
+
+.box {
+    width: 250px;
+    height: 60%;
+    background-color: var(--bg-primary);
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.045) 0px 0px 8px 0px;
+    color: var(--text-white);
+    font-weight: 500;
+
+}
+
+.box i {
+    display: none;
+}
+
+
+
+/* MEDIA QUERY FOR HEADER COMPONENT */
+
+
+@media(max-width:1024px) {
+    .header {
+        width: 100%;
+        padding: 0px 1%;
+
+
+    }
+}
+
+
+@media(max-width:991px) {
+    .header {
+        width: 100%;
+        display: block;
+        left: 0px;
+        right: 0px;
+        height: 100px;
+        padding: 10px 0px;
+        background-color: var(--bg-container);
+        box-shadow: rgba(0, 0, 0, 0.045) 0px 0px 15px 0px;
+
+
+    }
+
+    .logo {
+        width: 100%;
+        height: 40px;
+        justify-content: left;
+        padding-left: 20px;
+        background-color: transparent;
+        box-shadow: none;
+        align-items: normal;
+    }
+
+    .search {
+        width: 96%;
+        height: 40px;
+        margin: 3px auto;
+        box-shadow: none;
+        border: 1px solid var(--bg-body)
+    }
+
+    .box {
+        width: 160px;
+        position: absolute;
+        right: 14px;
+        top: 8px;
+        height: 35px;
+
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    .logo {
+        padding-left: 50px;
+
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+}
+
+@media(max-width:576px){
+    .box{
+        width: 130px;
+        right: 5px;
+    }
+    .box p{
+        font-size: 12px;
+    }
+}

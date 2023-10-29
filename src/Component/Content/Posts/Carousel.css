@@ -1,0 +1,60 @@
+.carousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel .car-data .img img {
+    width: 95%;
+    height: 170px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.carousel .car-data .title {
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.carousel .car-data .info {
+    justify-content: space-between;
+    padding: 7px 20px 7px 0px;
+
+}
+
+.carousel .car-data .info .price {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.carousel .car-data .info .rating {
+    color: orange;
+}
+
+
+/* MEDIA QUERY FOR CAROUSEL COMPONENT */
+
+@media(max-width:991px) {
+    .carousel {
+        background-color: var(--bg-container);
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .carousel .car-data .img img {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .carousel .car-data .img img {
+        width: 98%;
+    }
+}
+
+@media(max-width:576px) {
+    .carousel .car-data .img img {
+        width: 100%;
+    }
+}
